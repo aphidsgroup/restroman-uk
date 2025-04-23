@@ -6,4 +6,5 @@
   package = "@netlify/plugin-nextjs"
 
 [build.environment]
-  NEXT_PUBLIC_SITE_URL = "https://restroman-uk.netlify.app" 
+  NEXT_PUBLIC_SITE_URL = "https://restroman-uk.netlify.app"
+  NEXT_USE_REDIRECTS = "true" 

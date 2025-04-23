@@ -3,8 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ['images.unsplash.com', 'ui-avatars.com'],
-    unoptimized: true
-  }
+    unoptimized: true,
+  },
+  output: 'standalone',
 }
 
 module.exports = nextConfig 
