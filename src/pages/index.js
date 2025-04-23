@@ -7,7 +7,7 @@ export default function LandingPage() {
       display: 'flex', 
       justifyContent: 'center', 
       alignItems: 'center', 
-      height: '100vh',
+      minHeight: '100vh',
       flexDirection: 'column',
       background: '#f5f5f5',
       padding: '20px'
@@ -20,33 +20,73 @@ export default function LandingPage() {
         Restaurant Management Dashboard - A comprehensive solution for restaurant owners and managers
       </p>
       
-      <div style={{ display: 'flex', gap: '20px' }}>
-        <Link href="/dashboard" passHref>
-          <button style={{ 
-            padding: '10px 20px', 
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '15px', justifyContent: 'center', maxWidth: '600px' }}>
+        <Link 
+          href="/dashboard" 
+          style={{ 
+            padding: '12px 24px', 
             background: '#4CAF50', 
             color: 'white', 
             border: 'none', 
             borderRadius: '4px',
             fontSize: '1rem',
-            cursor: 'pointer'
-          }}>
-            Dashboard
-          </button>
+            cursor: 'pointer',
+            textDecoration: 'none',
+            display: 'inline-block'
+          }}
+        >
+          Dashboard
         </Link>
         
-        <Link href="/pos" passHref>
-          <button style={{ 
-            padding: '10px 20px', 
+        <Link 
+          href="/pos" 
+          style={{ 
+            padding: '12px 24px', 
             background: '#2196F3', 
             color: 'white', 
             border: 'none', 
             borderRadius: '4px',
             fontSize: '1rem',
-            cursor: 'pointer'
-          }}>
-            POS System
-          </button>
+            cursor: 'pointer',
+            textDecoration: 'none',
+            display: 'inline-block'
+          }}
+        >
+          POS System
+        </Link>
+        
+        <Link 
+          href="/orders" 
+          style={{ 
+            padding: '12px 24px', 
+            background: '#FF9800', 
+            color: 'white', 
+            border: 'none', 
+            borderRadius: '4px',
+            fontSize: '1rem',
+            cursor: 'pointer',
+            textDecoration: 'none',
+            display: 'inline-block'
+          }}
+        >
+          Orders
+        </Link>
+        
+        <Link 
+          href="/products" 
+          style={{ 
+            padding: '12px 24px', 
+            background: '#9C27B0', 
+            color: 'white', 
+            border: 'none', 
+            borderRadius: '4px',
+            fontSize: '1rem',
+            cursor: 'pointer',
+            textDecoration: 'none',
+            display: 'inline-block'
+          }}
+        >
+          Products
         </Link>
       </div>
     </div>

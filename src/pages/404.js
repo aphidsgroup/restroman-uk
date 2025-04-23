@@ -19,18 +19,20 @@ export default function Custom404() {
         The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
       </p>
       
-      <Link href="/" passHref>
-        <button style={{ 
+      <Link 
+        href="/" 
+        style={{ 
           padding: '10px 20px', 
           background: '#2196F3', 
           color: 'white', 
           border: 'none', 
           borderRadius: '4px',
           fontSize: '1rem',
-          cursor: 'pointer'
-        }}>
-          Back to Home
-        </button>
+          cursor: 'pointer',
+          textDecoration: 'none'
+        }}
+      >
+        Back to Home
       </Link>
     </div>
   )
